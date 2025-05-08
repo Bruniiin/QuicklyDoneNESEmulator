@@ -58,11 +58,6 @@ Processor graph{};
 Display display{};
 Modulator *mod{};
 
-SDL_Window *window = SDL_CreateWindow("testetest", 1000, 1000, 0);
-SDL_Event e;
-SDL_Window *memory = SDL_CreateWindow("memview", 400, 800, 0);
-SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL);
-
 int phx() {
     proc.address[proc.sp] = proc.x;
     proc.sp++;
